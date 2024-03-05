@@ -12,6 +12,7 @@ recognition.addEventListener("result", onSpeak);
 function onSpeak(e) {
   const speechResult = e.results[0][0].transcript;
   showGuessOnScreen(speechResult);
+  validateGuess(speechResult);
 }
 
 function showGuessOnScreen(guess) {
