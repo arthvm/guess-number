@@ -10,6 +10,13 @@ function validateGuess(guess) {
     <div>The guess needs to be a number between ${minNumber} and ${maxNumber}</div>
     `;
   }
+
+  if (numGuess === secretNumber) {
+    document.body.innerHTML = `
+    <h1>You got it!</h1>
+    <h3>The secret number was ${secretNumber}</h3>
+    `;
+  }
 }
 
 function checkIfIsNumber(numGuess) {
