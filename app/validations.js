@@ -12,6 +12,7 @@ function validateGuess(guess) {
     document.body.innerHTML = `
     <h1>You got it!</h1>
     <h3>The secret number was ${secretNumber}</h3>
+    <button id="restart" class="btn-restart">Restart Game</button>
     `;
   } else if (numGuess < secretNumber) {
     guessDiv.innerHTML += `
