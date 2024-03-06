@@ -1,6 +1,14 @@
 function validateGuess(guess) {
   const numGuess = +guess;
 
+  if (guess.toUpperCase() == "GAME OVER") {
+    document.body.innerHTML = `
+    <h1>Game Over</h1>
+    <h3>The secret number was ${secretNumber}</h3>
+    <button id="restart" class="btn-restart">Restart Game</button>
+    `;
+  }
+
   if (checkIfIsNumber(numGuess) || checkIfInRange(numGuess)) {
     guessDiv.innerHTML += `<div>Invalid</div>
     <div>The guess needs to be a number between ${minNumber} and ${maxNumber}</div>
