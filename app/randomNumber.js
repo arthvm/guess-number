@@ -11,4 +11,3 @@ function generateRandomNumber() {
 
 minNumberElement.innerHTML = minNumber;
 maxNumberElement.innerHTML = maxNumber;
-console.log("Secret Number:", secretNumber); // DEBUG PURPOSE
