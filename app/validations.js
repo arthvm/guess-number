@@ -19,7 +19,7 @@ function validateGuess(guess) {
     `;
   } else {
     guessDiv.innerHTML += `
-    <div class="hint-message">The secret number is bigger <i class="fa-solid fa-circle-arrow-down"></i></div>
+    <div class="hint-message">The secret number is smaller <i class="fa-solid fa-circle-arrow-down"></i></div>
     `;
   }
 }
