@@ -8,6 +8,7 @@ recognition.lang = "pt-Br";
 recognition.start();
 
 recognition.addEventListener("result", onSpeak);
+recognition.addEventListener("end", () => recognition.start());
 
 function onSpeak(e) {
   const speechResult = e.results[0][0].transcript;
