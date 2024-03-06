@@ -32,3 +32,9 @@ function checkIfIsNumber(numGuess) {
 function checkIfInRange(numGuess) {
   return numGuess > maxNumber || numGuess < minNumber;
 }
+
+document.body.addEventListener("click", (e) => {
+  if (e.target.id == "restart") {
+    window.location.reload();
+  }
+});
